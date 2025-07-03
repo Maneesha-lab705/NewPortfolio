@@ -349,7 +349,7 @@ body.dark .projects-section h2{
     font-size: 2.5rem;
     color: #00fcea;
 }
-body.dark .logo,footer #footer_name{
+body.dark .logo{
     color: white;
 }
 body.dark .project-card:hover{
@@ -358,4 +358,6 @@ body.dark .project-card:hover{
 footer #footer_name{
     color: #121212;
 }
-
+body.dark footer #footer_name{
+    color: white;
+}
