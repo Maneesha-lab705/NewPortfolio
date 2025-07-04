@@ -9,6 +9,7 @@ function updateThemeIcon() {
     icon.style.width = '24px';
     icon.style.height = '24px';
 
+
     toggleBtn.appendChild(icon);
 }
 

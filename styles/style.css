@@ -262,10 +262,26 @@ body.dark .project-card h3 ,.about-section h2 ,footer p,.projects-section h2{
         display: flex;
     }
 
-    .theme-toggle {
+    #toggle-theme{
         position: absolute;
-        right: 1rem;
-        top: 1rem;
+        right: 4rem;
+        top: 0.80rem;
+
+    }
+    .menu-toggle i{
+        position: relative;
+        width: 20px;
+        height: 20px;
+        top: 2px;
+        right: 5px;
+
+    }
+    .nav-links li a:hover{
+        background-color: transparent;
+        box-shadow: 0 6px 15px rgba(4, 244, 245, 0.8)
+    }
+    .btn-project{
+        margin-bottom: 10px;
     }
 }
 
@@ -342,7 +358,9 @@ footer {
 
 .logo{
     color: #1f1f1f;
+
 }
+
 body.dark .contact-section h2,
 body.dark .about-section h2,
 body.dark .projects-section h2{
@@ -360,4 +378,56 @@ footer #footer_name{
 }
 body.dark footer #footer_name{
     color: white;
+}
+
+body.dark .nav-links{
+    color: white;
+    background-color: #1f1f1f;
+}
+body.dark .menu-toggle i {
+    color: #fff;
+}
+/* Small devices (mobiles) */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #fff;
+        width: 100%;
+        display: none;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .theme-toggle {
+        position: absolute;
+        top: 1rem;
+        right: 3.5rem;
+    }
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .nav-links {
+        gap: 1rem;
+    }
+}
+
+/* Large devices (laptops/desktops) */
+@media (min-width: 1025px) {
+    .nav-links {
+        display: flex !important;
+        position: relative;
+        top: 10px;
+    }
 }
