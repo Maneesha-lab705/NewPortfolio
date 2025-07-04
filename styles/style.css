@@ -241,6 +241,22 @@ body.dark .project-card h3 ,.about-section h2 ,footer p,.projects-section h2{
 }
 
 @media (max-width: 768px) {
+    .logo{
+        position: relative;
+        left: 3rem;
+    }
+    .hero-text a{
+        background-color: white;
+        color: #121212;
+        padding: 0.75rem 1.5rem;
+        border-radius: 9999px;
+        font-weight: 400;
+        font-size: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease, color 0.3s ease;
+        display: inline-block;
+        margin-right: 10px;
+    }
     .menu-toggle {
         display: block;
     }
