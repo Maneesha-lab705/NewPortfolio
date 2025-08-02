@@ -1,0 +1,45 @@
+
+
+.section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+}
+
+.section h2 {
+    text-align: center;
+    color: #00aaff;
+    margin-bottom: 2rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: #1e1e2f;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img,
+.card video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.caption {
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: center;
+    color: #ccc;
+}
